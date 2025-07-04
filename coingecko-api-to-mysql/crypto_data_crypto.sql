@@ -1,0 +1,52 @@
+-- MySQL dump 10.13  Distrib 8.0.42, for Win64 (x86_64)
+--
+-- Host: localhost    Database: crypto_data
+-- ------------------------------------------------------
+-- Server version	8.0.42
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `crypto`
+--
+
+DROP TABLE IF EXISTS `crypto`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `crypto` (
+  `name` varchar(255) DEFAULT NULL,
+  `symbol` varchar(20) DEFAULT NULL,
+  `price` decimal(18,8) DEFAULT NULL,
+  `market_cap` bigint DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `crypto`
+--
+
+LOCK TABLES `crypto` WRITE;
+/*!40000 ALTER TABLE `crypto` DISABLE KEYS */;
+INSERT INTO `crypto` VALUES ('Bitcoin','btc',109837.00000000,2183696052858),('Ethereum','eth',2590.04000000,312634065831),('Tether','usdt',1.00000000,158327682245),('XRP','xrp',2.28000000,134640043723),('BNB','bnb',661.25000000,96442480351),('Solana','sol',151.81000000,81176547076),('USDC','usdc',0.99989600,62062221900),('TRON','trx',0.28576200,27078341789),('Dogecoin','doge',0.17186000,25766243118),('Lido Staked Ether','steth',2590.54000000,23563004713),('Cardano','ada',0.59623500,21558324195),('Wrapped Bitcoin','wbtc',109735.00000000,14136570243),('Hyperliquid','hype',40.40000000,13486412222),('Wrapped stETH','wsteth',3096.69000000,10534415283),('Sui','sui',3.00000000,10356136676),('Bitcoin Cash','bch',498.06000000,9922289576),('Chainlink','link',13.74000000,9320820612),('LEO Token','leo',9.03000000,8332211413),('Avalanche','avax',18.55000000,7830953672),('Stellar','xlm',0.24298900,7514459451),('USDS','usds',0.99983000,7222138989),('Toncoin','ton',2.85000000,7043237667),('WETH','weth',2592.23000000,7022082089),('Shiba Inu','shib',0.00001187,6995333044),('Litecoin','ltc',89.79000000,6826889341),('Hedera','hbar',0.15923000,6748674177),('Wrapped eETH','weeth',2776.60000000,6743747561),('WhiteBIT Coin','wbt',43.82000000,6314370661),('Binance Bridged USDT (BNB Smart Chain)','bsc-usd',0.99998600,6277325176),('Monero','xmr',320.23000000,5896442148),('Polkadot','dot',3.54000000,5386661653),('Bitget Token','bgb',4.57000000,5349792942),('Ethena USDe','usde',1.00000000,5311050224),('Coinbase Wrapped BTC','cbbtc',109870.00000000,5180159708),('Uniswap','uni',7.62000000,4575475270),('Aave','aave',279.08000000,4233750183),('Pepe','pepe',0.00001005,4225329503),('Pi Network','pi',0.49327500,3767436967),('Dai','dai',1.00000000,3610974861),('Ethena Staked USDe','susde',1.18000000,3144079727),('Aptos','apt',4.73000000,3047278410),('Bittensor','tao',336.14000000,3010902912),('OKB','okb',50.04000000,3003018801),('BlackRock USD Institutional Digital Liquidity Fund','buidl',1.00000000,2846195399),('NEAR Protocol','near',2.27000000,2790014845),('Jito Staked SOL','jitosol',184.20000000,2711746821),('Internet Computer','icp',5.00000000,2675746100),('Ethereum Classic','etc',17.04000000,2601138066),('Cronos','cro',0.08292400,2579830012),('Ondo','ondo',0.79609800,2514030191);
+/*!40000 ALTER TABLE `crypto` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-07-03 22:16:10
